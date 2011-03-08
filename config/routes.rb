@@ -1,7 +1,13 @@
 Getbuz::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  resources :cards, :users
 
+  resources :sessions do
+    member do
+      get :auth
+    end
+  end
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

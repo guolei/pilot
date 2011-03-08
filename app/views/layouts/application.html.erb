@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Getbuz</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+  <head>
+    <title>Getbuz</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="nav">
+        <div class="rfloat f12">
 
-<%= yield %>
+        </div>
+        <a href="/" class="logo"><img width="166" height="17" alt="Facebook Developers" src="http://static.ak.fbcdn.net/rsrc.php/v1/yW/r/N2f0JA5UPFU.png" class="img"></a>
+        <%= link_to t(:menu_shop) %>
+        <%= link_to t(:my_reward) %>
 
-</body>
+        <div class="clear_float"></div>
+      </div>
+    </div>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      <div class="copyright">Getbuz 2011</div>
+      <div class="links"><%= link_to "About" %><%= link_to "Privacy Policy"%></div>
+    </div>
+  </body>
 </html>

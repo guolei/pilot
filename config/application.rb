@@ -40,3 +40,5 @@ module Getbuz
     config.filter_parameters += [:password]
   end
 end
+
+AppConfig = YAML.load_file(Rails.root.join("config/app_config.yml"))

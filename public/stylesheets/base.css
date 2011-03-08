@@ -1,0 +1,196 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+nav ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted #000; cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+pre { padding: 15px; white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 2.1 */ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ word-wrap: break-word; /* IE */ }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; text-rendering: optimizeLegibility; }
+html { -webkit-font-smoothing: antialiased; }
+
+/* always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+a img { border: none; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+/* make buttons play nice in IE:  */
+button { width: auto; overflow: visible; }
+
+/* bicubic resizing for non-native sized IMG: */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/* >> The Magnificent CLEARFIX << */
+.clear_float:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clear_float {clear:both; display: inline-block; }
+* html .clear_float { height: 1%; }
+
+/* Hides from IE-mac \*/
+.clear_float { display: block; }
+
+/*$blue-dark:#6486C4;*/
+/*$blue-light:#E6EDFF;*/
+/*------------------------------------------- 
+	Typography START
+---------------------------------------------*/
+body { font-size: 14px; color: #222; background: none repeat scroll 0 0 #F2F2F2; line-height: 1.5; font-family: 'lucida grande', verdana, tahoma, arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; color: #000; }
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; margin-bottom: 1.5em; }
+h6 { font-size: 1em; }
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+a { color: #3366cc; text-decoration: none; }
+a:visited { color: #3366cc; text-decoration: none; }
+a:hover { color: #6699ff; text-decoration: underline; }
+
+p { margin: 0 0 1.5em; }
+.rfloat{float:right;}
+.calign { text-align: center; }
+.lalign { text-align: left; }
+.ralign { text-align: right; }
+blockquote { margin: 1.5em; color: #666; font-style: italic; }
+strong, dfn { font-weight: bold; }
+em, dfn { font-style: italic; }
+sup, sub { line-height: 0; }
+abbr, acronym { border-bottom: 1px dotted #666; }
+address { margin: 0 0 1.5em; font-style: italic; }
+del { color: #666; }
+pre { margin: 1.5em 0; white-space: pre; }
+pre, code, tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+li{list-style: none;}
+li ul, li ol { margin: 0; }
+ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+dd { margin-left: 1.5em; }
+table { width: 100%; border-collapse: collapse; empty-cells: show; }
+th { font-weight: bold; }
+thead th { background: #555; color: #fff; }
+th, td, caption { padding: 4px 5px; }
+td { border-collapse: collapse; }
+tfoot { font-style: italic; }
+caption { background: #eee; }
+.small { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide { display: none; }
+.first { margin-left: 0; padding-left: 0; }
+.last { margin-right: 0; padding-right: 0; }
+.top { margin-top: 0; padding-top: 0; }
+.bottom { margin-bottom: 0; padding-bottom: 0; }
+.helpcursor { cursor: help; }
+.red{color:red;}
+.red a{color:#cc0000;}
+/*------------------------------------------- 
+	Typography END
+---------------------------------------------*/
+/*------------------------------------------- 
+	Form START
+---------------------------------------------*/
+fieldset { padding: 0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend { font-weight: bold; font-size: 1.2em; margin-top: -0.2em; margin-bottom: 1em; padding: 0 5px; }
+fieldset, #IE8#HACK { padding-top: 1.4em; }
+legend, #IE8#HACK { margin-top: 0; margin-bottom: 0; }
+input[type=text], input[type=password], input.text, input.title, textarea,select { font-size:14px; background-color: #fff; border: 1px solid #bbb; padding: 2px; font-family: 'lucida grande',verdana,tahoma,arial,sans-serif; }
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus { border-color: #666; background-color: #fffad9; }
+select { background-color: #fff; border-width: 1px; border-style: solid; }
+input[type=text], input[type=password], input.text, input.title, textarea, select { margin: 0.5em 0; }
+input.text, input.title { width: 400px; padding: 5px; }
+input.title { font-size: 1.5em; }
+textarea { width: 500px; padding: 5px; height: 60px;}
+input.input_login { padding: 4px; font-size: 14px; width: 150px; }
+form{margin:0;padding:0;}
+form.inline { line-height: 3; }
+form.inline p { margin-bottom: 0; }
+.error, .alert, .alertbox, .errorExplanation, .notice, .warnbox, .success, .noticebox, .info, .bluebox, .graybox { padding: 0.8em; margin-bottom: 1em; border: 1px solid #ddd; border-bottom: 2px solid #ddd; color: #333; }
+.error, .alert, .alertbox, .errorExplanation { background: #fbe3e4; border-color: #ff6633; }
+.notice, .warnbox { background: #fff6bf; border-color: #ffd324; }
+.success, .noticebox { background: #e6efc2; border-color: #c6d880; }
+.info, .bluebox { background: #ebf0fb; border-color: #c8cbeb; }
+.red { color: #ff6633; }
+.strong { font-weight: bold; }
+.f12{font-size:12px;}
+.short{width:200px !important;}
+
+a.button, a.button_cancel, input.button, input.button_cancel {font-size:14px; padding: 7px 10px 7px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; border: none; border-bottom: 1px solid #2d4486; background-color: #577bbf; color: #fff; font-weight: bold; text-decoration: none; cursor: pointer; position: relative; display: inline-block; text-align: center; line-height: 1; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5); }
+a.button:hover, a.button_cancel:hover, input.button:hover, input.button_cancel:hover { background-color: #3f62a4; }
+a.button:active, a.button_cancel:active, input.button:active, input.button_cancel:active { -webkit-transform: translateY(1px); -moz-transform: translateY(1px); }
+
+.pagination { display: inline-block; padding: 0 10px; margin-left: 10px;}
+.pagination a { display: inline-block; border: 1px solid #BBCEDE; padding: 1px 5px; text-decoration: none; }
+.pagination a:hover { border: 1px solid #fff; background-color: #577bbf; color: #fff; }
+.pagination .current { padding: 3px 5px; border: 1px solid #ebf0fb; }
+
+
+.nav, .main, .footer{margin: auto; max-width: 900px;}
+
+.menu {position: fixed;width: 100%;z-index: 100;color: #FFFFFF;background: none repeat scroll 0 0 #3B5998;font-weight: bold;padding-top: 8px;}
+.menu a {color: #FFFFFF;line-height:29px;padding:2px 11px}
+.menu a:hover,.menu a.logo:hover{background:#6d86b7;text-decoration:none}
+.menu .nav {
+    background: none repeat scroll 0 0 #627AAD;
+    border-color: #1D4088 #1D4088;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    padding: 0 16px;
+}
+.menu a.logo{padding:7px 6px 9px;margin-right:12px;line-height:0}
+.menu a.logo img{width:166px;height:17px}
+.menu a.logo,.menu a{display:block;float:left}
+
+.main{border:1px solid #ddd;border-top:0;background:white;padding:60px 16px 32px; min-height:400px;}
+.footer{color:#777777;padding:10px;padding-bottom:30px;max-width:925px;font-size:12px;}
+.footer .copyright{float:left;}
+.footer .links{text-align:right;}
+.footer .links a{margin-left:15px;}
+
+.edit_form{margin-left:50px;}
+.edit_form dt{clear:both; margin-top: 10px; float: left;width:150px; text-align: right; margin-right:10px;}
+
+h3{border-bottom: 1px solid #BBCEDE;padding:5px; color: #3B5998;}
+h4{border-bottom:1px dotted #BBCEDE;padding:2px;color:#3B5998;font-size:14px;margin:0;}
+
+.list_title{background-color: #EBF0FB;border-bottom: 1px solid #BBCEDE; padding: 5px 10px;margin:0 15px;}
+.list li{list-style: none; border-bottom: 1px solid #BBCEDE;padding:15px 5px;}
+.list li.first{border-top:1px solid #BBCEDE;}
+.list_title .sub, .list .sub{float: right; width:80px;}
+.list li .more{font-size: 12px;}
+.list li .more a{color: #000;}
+
+.block{background:#EDEFF4;padding:10px;width:100%;}
+
+.reg{float:right;margin-top:10px;}
+.reg li{float:left;height:24px;line-height:24px;}
+.share_link{margin:10px;font-size:12px;}
+.share{margin:10px 10px 0px 10px;}
+
+.view_shop{padding:10px 20px;border:2px solid #BBCEDE;margin:10px;}
+.view_shop p{padding:0;margin:5px 0;}
+.view_shop .base{font-size:12px;width:400px;padding-right:20px;border-right:1px solid #BBCEDE; float:left;min-height:180px;}
+.view_shop .title{font-family: "Microsoft YaHei",黑体,Tahoma,Arial,sans-serif;font-size: 20px;font-weight: bold;margin-bottom: 10px;border-bottom:1px solid #BBCEDE;}
+.view_shop .oper{float:left;padding-left:20px;}
+.view_shop .money{background:url('../images/money_bag.png') no-repeat left center; padding-left:60px;}
+.view_shop .bonus{color:red;font-size:24px;font-family: Chicago;}
+
+.comment_title{margin:5px 10px;}
+
+.comment{font-size:12px;}
+.comment li{padding:10px 0;}
+.comment .avatar{float:left;width:60px;}
+.comment .c{float:left;width:700px;}
+.comment .c .title{background: #EDEFF4;margin:0 0 5px 0;padding:3px;}
