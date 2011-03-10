@@ -10,24 +10,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110308025321) do
+ActiveRecord::Schema.define(:version => 20110310031752) do
 
-  create_table "cards", :force => true do |t|
+  create_table "biz_profiles", :force => true do |t|
     t.integer  "user_id"
+    t.string   "name"
+    t.string   "address"
+    t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "biz_profiles", ["user_id"], :name => "index_biz_profiles_on_user_id", :unique => true
+
+  create_table "sns_accounts", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "type"
+    t.string   "access_token"
+    t.string   "name"
+    t.string   "link_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sns_accounts", ["user_id"], :name => "index_sns_accounts_on_user_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "type"
+    t.string   "mail"
     t.string   "sn"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "cards", ["sn"], :name => "index_cards_on_sn", :unique => true
-  add_index "cards", ["user_id"], :name => "index_cards_on_user_id"
-
-  create_table "users", :force => true do |t|
-    t.string   "type"
-    t.string   "uid"
-    t.string   "access_token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  add_index "users", ["sn"], :name => "index_users_on_sn", :unique => true
 
 end

@@ -1,4 +1,4 @@
-class FacebookUser < User
+class FacebookAccount < SnsAccount
 
   def validate_token(oauth_verifier)
     RestClient.proxy = ENV['http_proxy']
