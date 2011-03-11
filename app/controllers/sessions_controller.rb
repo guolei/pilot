@@ -11,9 +11,9 @@ class SessionsController < ApplicationController
     if params[:error_reason].present?
       redirect_to(:root, :notice => "Unable to activate facebook: #{params[:error_reason]}")
     elsif params[:code].present?
-      card = Card.find_by_sn(params[:id])
-      card.user = FacebookUser.create if card.user.blank?
-      card.user.validate_token(params[:code])
+#      card = Card.find_by_sn(params[:id])
+#      card.user = FacebookAccount::API.create if card.user.blank?
+#      card.user.validate_token(params[:code])
       redirect_to('/')
     end
   end

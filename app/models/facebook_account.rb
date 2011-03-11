@@ -1,4 +1,4 @@
-class FacebookUser < User
+class FacebookAccount < SnsAccount
 
   def validate_token(oauth_verifier)
     callback_url = AppConfig["callback"][Rails.env].gsub(":sn", "12345")

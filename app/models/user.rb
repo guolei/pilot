@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  has_one :card
+  has_one :sns_account
 end
