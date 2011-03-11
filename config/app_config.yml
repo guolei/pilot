@@ -1,5 +1,5 @@
 callback: 
-  development: http://192.168.1.51:3000/sessions/:sn/auth
+  development: http://192.168.1.140:3000/sessions/:sn/auth
   test: http://localhost:3000/sessions/:sn/auth
 
 facebook:

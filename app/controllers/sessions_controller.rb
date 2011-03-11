@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    callback = AppConfig["callback"][Rails.env].gsub(":sn", params[:sn])
+    callback = AppConfig["callback"][Rails.env].gsub(":sn", "12345")
     uri = URI.parse(FacebookUser::API.authorize_url)
     uri.query = {:client_id => FacebookUser::API.client_id, :redirect_uri => callback,
       :scope => "publish_stream"}.to_param  #offline_access

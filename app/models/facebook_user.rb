@@ -1,10 +1,12 @@
 class FacebookUser < User
 
   def validate_token(oauth_verifier)
+    callback_url = AppConfig["callback"][Rails.env].gsub(":sn", "12345")
     RestClient.proxy = ENV['http_proxy']
     response = RestClient.get API.access_token_url, :params => {
       :client_id => API.client_id,
       :client_secret => API.client_secret,
+      :redirect_uri => callback_url.html_safe,
       :code => oauth_verifier.html_safe
     }
     pair = response.body.split("&")[0].split("=")
